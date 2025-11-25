@@ -77,9 +77,9 @@ class JiraScrapper:
         self.config = config
         self.output_dir = output_dir
         self.rate_limiter = AdaptiveRateLimiter(config.request_delay)
-        self.session = Optional[aiohttp.ClientSession] = None
+        self.session: Optional[aiohttp.ClientSession] = None
 
-    self.stats = {
+        self.stats = {
             'projects': {},
             'total_issues_found': 0,
             'total_issues_processed': 0,

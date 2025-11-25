@@ -317,7 +317,7 @@ class DataTransformer:
         """
         Process project with checkpointing and parallel processing
         """
-        logger.info(f"🔄 Processing project: {project_dir.name}")
+        logger.info(f" Processing project: {project_dir.name}")
         
         # Load checkpoint
         checkpoint_file = output_file.with_suffix('.checkpoint')
@@ -328,10 +328,10 @@ class DataTransformer:
         all_json_files = [f for f in all_json_files if f.name != 'checkpoint.json']
         pending_files = [f for f in all_json_files if f.name not in processed_files]
         
-        logger.info(f"📁 Found {len(pending_files)}/{len(all_json_files)} files to process")
+        logger.info(f" Found {len(pending_files)}/{len(all_json_files)} files to process")
         
         if not pending_files:
-            logger.info(f"✅ No new files to process for {project_dir.name}")
+            logger.info(f" No new files to process for {project_dir.name}")
             return 0
         
         examples_count = 0
@@ -343,7 +343,7 @@ class DataTransformer:
                 for i in range(0, len(pending_files), batch_size):
                     batch = pending_files[i:i + batch_size]
                     
-                    logger.info(f"📦 Processing batch {i//batch_size + 1}: "
+                    logger.info(f" Processing batch {i//batch_size + 1}: "
                                f"files {i}-{i+len(batch)}")
                     
                     # Process batch
@@ -373,7 +373,7 @@ class DataTransformer:
         if checkpoint_file.exists():
             checkpoint_file.unlink()
         
-        logger.info(f"✅ Completed {project_dir.name}: {examples_count} examples")
+        logger.info(f" Completed {project_dir.name}: {examples_count} examples")
         return examples_count
     
     def _load_checkpoint(self, checkpoint_file: Path) -> set:
@@ -404,7 +404,7 @@ class DataTransformer:
         total_examples = 0
         project_dirs = [d for d in raw_data_dir.iterdir() if d.is_dir()]
         
-        logger.info(f"🎯 Starting transformation of {len(project_dirs)} projects")
+        logger.info(f" Starting transformation of {len(project_dirs)} projects")
         
         for project_dir in project_dirs:
             output_file = output_dir / f"{project_dir.name}_training.jsonl"
@@ -427,7 +427,7 @@ class DataTransformer:
         logger.info(" TRANSFORMATION COMPLETED!")
         logger.info("=" * 60)
         
-        logger.info("📊 TRANSFORMATION STATISTICS:")
+        logger.info(" TRANSFORMATION STATISTICS:")
         logger.info(f"   Total issues processed:    {self.stats['total_processed']}")
         logger.info(f"   Total examples generated:  {self.stats['total_examples']}")
         logger.info(f"   Validation failures:       {self.stats['validation_failures']}")
