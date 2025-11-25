@@ -1,0 +1,138 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "13543871",
+  "self": "https://issues.apache.org/jira/rest/api/2/issue/13543871",
+  "key": "SPARK-44467",
+  "fields": {
+    "summary": "Setting master version to 4.0.0-SNAPSHOT",
+    "created": "2023-07-18T02:42:34.887+0000",
+    "description": null,
+    "reporter": {
+      "self": "https://issues.apache.org/jira/rest/api/2/user?username=LuciferYang",
+      "name": "LuciferYang",
+      "key": "luciferyang",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10432",
+        "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10432",
+        "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10432",
+        "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10432"
+      },
+      "displayName": "Yang Jie",
+      "active": true,
+      "timeZone": "Etc/UTC"
+    },
+    "comment": {
+      "comments": [
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13543871/comment/17744048",
+          "id": "17744048",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=snoot",
+            "name": "snoot",
+            "key": "snoot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "Snoot.io",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "User 'LuciferYang' has created a pull request for this issue:\nhttps://github.com/apache/spark/pull/42048",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=snoot",
+            "name": "snoot",
+            "key": "snoot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "Snoot.io",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2023-07-18T03:25:54.327+0000",
+          "updated": "2023-07-18T03:25:54.327+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13543871/comment/17744142",
+          "id": "17744142",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=Qin+Yao",
+            "name": "Qin Yao",
+            "key": "qin yao",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=qin+yao&avatarId=41139",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=qin+yao&avatarId=41139",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=qin+yao&avatarId=41139",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=qin+yao&avatarId=41139"
+            },
+            "displayName": "Kent Yao 2",
+            "active": true,
+            "timeZone": "Asia/Shanghai"
+          },
+          "body": "Issue resolved by pull request 42048\n[https://github.com/apache/spark/pull/42048]",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=Qin+Yao",
+            "name": "Qin Yao",
+            "key": "qin yao",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=qin+yao&avatarId=41139",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=qin+yao&avatarId=41139",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=qin+yao&avatarId=41139",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=qin+yao&avatarId=41139"
+            },
+            "displayName": "Kent Yao 2",
+            "active": true,
+            "timeZone": "Asia/Shanghai"
+          },
+          "created": "2023-07-18T09:41:52.879+0000",
+          "updated": "2023-07-18T09:41:52.879+0000"
+        }
+      ],
+      "maxResults": 2,
+      "total": 2,
+      "startAt": 0
+    },
+    "assignee": {
+      "self": "https://issues.apache.org/jira/rest/api/2/user?username=LuciferYang",
+      "name": "LuciferYang",
+      "key": "luciferyang",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10432",
+        "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10432",
+        "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10432",
+        "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10432"
+      },
+      "displayName": "Yang Jie",
+      "active": true,
+      "timeZone": "Etc/UTC"
+    },
+    "priority": {
+      "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.svg",
+      "name": "Major",
+      "id": "3"
+    },
+    "updated": "2023-07-19T10:00:45.922+0000",
+    "labels": [],
+    "status": {
+      "self": "https://issues.apache.org/jira/rest/api/2/status/5",
+      "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/resolved.png",
+      "name": "Resolved",
+      "id": "5",
+      "statusCategory": {
+        "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    }
+  }
+}
