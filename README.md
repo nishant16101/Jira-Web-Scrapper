@@ -126,10 +126,20 @@ python main.py --projects KAFKA --transform-only
 # Custom configuration
 python main.py --projects KAFKA --max-concurrent 10 --request-delay 0.1
 
+Configuration Options
+--projects: Comma-separated project keys
+
+--max-concurrent: Concurrent API requests (default: 5)
+
+--request-delay: Base delay between requests (default: 0.2s)
+
+--output-dir: Data directory (default: 'data') 
+```
 
 
 
- Future Enhancements
+
+Future Enhancements
 Immediate Improvements
 Distributed Scraping: Multi-worker architecture with Redis coordination
 
