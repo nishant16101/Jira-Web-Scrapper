@@ -12,7 +12,7 @@ This project implements a robust data scraping and transformation pipeline that 
 
 ##  Performance Results
 
-![Pipeline Performance Results](pipeline-results.png)
+![Pipeline Performance Results](screenshot.png)
 
 ###  Pipeline Statistics
 PIPELINE COMPLETED SUCCESSFULLY!
@@ -58,6 +58,20 @@ OUTPUT FILES:
 - **Unified Interface**: Single command to run complete pipeline
 - **Progress Monitoring**: Real-time statistics and logging
 - **Flexible Execution**: Scrape-only, transform-only, or full pipeline modes
+
+##  Project Structure
+project-root/
+├── src/main.py # Pipeline orchestrator
+├── requirements.txt # Dependencies
+├── README.md # This file
+├── pipeline-results.png # Performance screenshot
+└── src/ # Source code
+├── src/scraper.py # JIRA API scraping module
+├── src/transformer.py # Data transformation module
+└── src/data/ # Sample data (input/output)
+├── src/raw/ # Raw JSON files from JIRA
+└── src/processed/ # Processed JSONL training files
+
 
 ##  Optimization Strategies
 
